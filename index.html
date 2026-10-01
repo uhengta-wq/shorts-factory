@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shorts Factory (쇼츠공장)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><div class="mark">썰</div><div><h1>Shorts Factory <span class="ko">쇼츠공장</span></h1></div></header>
+  <p class="sub">A personal desktop tool for producing and uploading short story videos to the operator's own YouTube channel, <b>썰 메가폰</b>.</p>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="mailto:uhengta@gmail.com">Contact</a></nav>
+
+  <h2>What it is</h2>
+  <p>Shorts Factory is a single-user application that runs locally on the operator's Windows PC (it is opened at <code>localhost</code> and is not published or distributed to other users). It helps the operator turn a written story into a vertical short video and upload it to the operator's own YouTube channel.</p>
+  <p class="ko">쇼츠공장은 운영자 본인의 Windows PC에서만 실행되는 1인용 프로그램입니다. 글로 된 사연을 세로 쇼츠 영상으로 만들어 운영자 본인의 유튜브 채널에 올리는 것을 돕습니다. 다른 사람에게 배포하거나 판매하지 않습니다.</p>
+
+  <h2>How it uses YouTube API Services</h2>
+  <p>This application uses <b>YouTube API Services</b>. By using it, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  <ul>
+    <li><b>Upload</b> (<code>videos.insert</code>): after the operator reviews and approves a finished video, it is uploaded to the operator's own channel.</li>
+    <li><b>Channel name</b> (<code>channels.list</code>, mine=true): shows which channel is connected.</li>
+    <li><b>Search</b> (<code>search.list</code>, <code>videos.list</code>): the operator can search public Shorts by keyword to look for story ideas. Results (title, thumbnail, channel, view count) are shown on screen only and are not stored, downloaded or re-uploaded.</li>
+  </ul>
+  <p class="ko">업로드(운영자가 검수·승인한 영상만), 연결된 채널 이름 확인, 쇼츠 검색(아이디어 참고용, 화면에 보여주기만 하고 저장·내려받기·재업로드하지 않음)에만 YouTube API를 사용합니다.</p>
+
+  <h2>Workflow</h2>
+  <ol>
+    <li>The operator pastes a story text.</li>
+    <li>The app rewrites it as a short narration script, creates a voice-over, and composes a 1080×1920 video with free illustrations.</li>
+    <li>The operator reviews the video and approves it.</li>
+    <li>Only approved videos are uploaded to the operator's channel.</li>
+  </ol>
+
+  <h2>Contact</h2>
+  <p>Operator of 썰 메가폰 — <a href="mailto:uhengta@gmail.com">uhengta@gmail.com</a></p>
+
+  <footer>Shorts Factory · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · Uses YouTube API Services</footer>
+</main>
+</body>
+</html>
